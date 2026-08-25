@@ -3,46 +3,86 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfolio of Alex Doe, a full-stack developer building fast, accessible web applications." />
-  <meta name="theme-color" content="#0b1220" />
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2338bdf8'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='%230b1220' font-family='Arial' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E" />
-  <title>Alex Doe — Full-Stack Developer</title>
+  <title>Induwara Nanayakkara | Senior Engineer – Cloud and AppSec</title>
+  <meta name="description" content="Induwara Nanayakkara is a Senior Engineer specializing in cloud security, application security, and DevSecOps, with hands-on experience implementing enterprise security solutions across Microsoft Azure and AWS." />
+  <link rel="canonical" href="https://induwaran.github.io/Portfolio/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Induwara Nanayakkara | Senior Engineer – Cloud and AppSec" />
+  <meta property="og:description" content="Senior Engineer specializing in cloud security, application security, and DevSecOps. Hands-on enterprise security implementation across Azure and AWS." />
+  <meta property="og:url" content="https://induwaran.github.io/Portfolio/" />
+  <meta property="og:site_name" content="Induwara Nanayakkara" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Induwara Nanayakkara | Senior Engineer – Cloud and AppSec" />
+  <meta name="twitter:description" content="Senior Engineer specializing in cloud security, application security, and DevSecOps." />
+  <meta name="theme-color" content="#0a1120" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Induwara Nanayakkara",
+    "jobTitle": "Senior Engineer - Cloud and AppSec",
+    "worksFor": { "@type": "Organization", "name": "Innov8 Pvt Ltd" },
+    "email": "mailto:induwaran@icloud.com",
+    "url": "https://induwaran.github.io/Portfolio/",
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Wrexham Glyndŵr University" },
+    "address": { "@type": "PostalAddress", "addressCountry": "LK" },
+    "sameAs": [
+      "https://www.linkedin.com/in/induwara-nanayakkara-6953a422b",
+      "https://github.com/induwaran"
+    ]
+  }
+  </script>
 </head>
 <body>
 
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <header class="site-header">
     <div class="container nav-inner">
-      <a href="#home" class="logo">alex<span>.dev</span></a>
-      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+      <a href="#home" class="logo">induwara<span>.sec</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
         <span></span><span></span><span></span>
       </button>
-      <nav id="nav-menu" class="nav-menu" aria-label="Primary">
+      <nav id="nav-menu" class="nav-menu" aria-label="Primary navigation">
         <ul>
           <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
           <li><a class="nav-link" href="#skills">Skills</a></li>
           <li><a class="nav-link" href="#projects">Projects</a></li>
-          <li><a class="nav-link" href="#contact">Contact</a></li>
+          <li><a class="nav-link" href="#labs">Labs</a></li>
+          <li><a class="nav-link" href="#education">Education</a></li>
+          <li><a class="btn btn-small btn-outline" href="resume.html">Resume</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main">
 
     <section id="home" class="hero">
       <div class="container hero-inner">
-        <p class="hero-eyebrow">Hi, my name is</p>
-        <h1>Alex Doe<span class="dot">.</span></h1>
-        <p class="hero-title">Full-Stack Developer<span class="dot">.</span></p>
+        <div class="monogram" aria-hidden="true">IN</div>
+        <p class="hero-eyebrow">Induwara Nanayakkara</p>
+        <h1>Senior Engineer <span class="accent-line">– Cloud and AppSec</span></h1>
+        <ul class="hero-tags" aria-label="Core focus areas">
+          <li>Cloud Security</li>
+          <li>Application Security</li>
+          <li>DevSecOps</li>
+        </ul>
         <p class="hero-blurb">
-          I design and build fast, accessible web applications end to end —
-          from clean, maintainable code to polished user experiences.
+          I specialize in implementing enterprise security solutions — securing cloud
+          environments on Microsoft Azure and AWS, performing application security
+          assessments with SAST and DAST, and integrating security controls into
+          CI/CD workflows.
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projects">View My Work</a>
-          <a class="btn btn-ghost" href="#contact">Get In Touch</a>
+          <a class="btn btn-primary" href="#experience">View Experience</a>
+          <a class="btn btn-outline" href="#projects">Explore My Work</a>
+          <a class="btn btn-ghost" href="https://github.com/induwaran" target="_blank" rel="noopener noreferrer">View GitHub ↗</a>
+          <a class="btn btn-ghost" href="#contact">Contact Me</a>
         </div>
       </div>
     </section>
@@ -50,174 +90,307 @@
     <section id="about" class="section">
       <div class="container">
         <header class="section-head reveal">
-          <p class="section-kicker">About</p>
-          <h2>A bit about me</h2>
+          <p class="section-kicker">01 · About</p>
+          <h2>What I do</h2>
         </header>
         <div class="about-grid">
           <div class="about-text reveal">
             <p>
-              I'm a developer who enjoys turning complex problems into simple,
-              elegant interfaces. My journey started with tweaking website
-              templates out of curiosity and grew into shipping full production
-              applications used by thousands of people.
+              I am a Senior Engineer specializing in cloud security, application
+              security, and DevSecOps, currently working at Innov8 Pvt Ltd. My work
+              centers on hands-on implementation of enterprise security solutions —
+              from securing cloud environments and workloads to embedding security
+              controls into software development and CI/CD workflows.
             </p>
             <p>
-              These days I work across the whole stack: component-driven
-              frontends, Node.js backends, and the infrastructure that keeps
-              everything running smoothly. I care deeply about performance,
-              accessibility, and writing code that the next person can read.
+              Day to day, I perform application security assessments using SAST and
+              DAST methodologies, implement and administer security platforms such
+              as Veracode, Prisma Cloud, and Zimperium, and work with development,
+              infrastructure, and security teams to establish practical secure
+              development practices. I care about security that enables delivery
+              rather than blocking it.
             </p>
             <p>
-              When I'm not coding, you'll find me contributing to open source,
-              writing about web development, or exploring hiking trails far
-              away from a screen.
+              Before my current role, I worked in IT Risk and Security Operations at
+              Allianz Insurance Lanka Limited, gaining experience in a regulated
+              financial services environment.
             </p>
           </div>
           <aside class="about-card reveal" data-delay="1">
-            <h3>Quick facts</h3>
+            <h3>At a glance</h3>
             <ul>
-              <li><span class="k">Location</span><span class="v">Berlin, Germany</span></li>
-              <li><span class="k">Experience</span><span class="v">5+ years</span></li>
-              <li><span class="k">Focus</span><span class="v">Web apps &amp; APIs</span></li>
-              <li><span class="k">Currently</span><span class="v">Open to new work</span></li>
+              <li><span class="k">Role</span><span class="v">Senior Engineer – Cloud and AppSec</span></li>
+              <li><span class="k">Organization</span><span class="v">Innov8 Pvt Ltd</span></li>
+              <li><span class="k">Since</span><span class="v">May 2023</span></li>
+              <li><span class="k">Location</span><span class="v">Sri Lanka</span></li>
+              <li><span class="k">Cloud</span><span class="v">Microsoft Azure · AWS</span></li>
             </ul>
           </aside>
         </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section section-alt">
-      <div class="container">
-        <header class="section-head reveal">
-          <p class="section-kicker">Skills</p>
-          <h2>Technologies I work with</h2>
-        </header>
-        <div class="skills-grid">
-          <article class="skill-group reveal">
-            <h3>Frontend</h3>
-            <ul class="chips">
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>JavaScript (ES6+)</li>
-              <li>TypeScript</li>
-              <li>React</li>
-              <li>Vite</li>
-            </ul>
+        <div class="focus-grid">
+          <article class="focus-card reveal">
+            <h3>Cloud Security</h3>
+            <p>Securing cloud environments and workloads, with a focus on posture management across Azure and AWS.</p>
           </article>
-          <article class="skill-group reveal" data-delay="1">
-            <h3>Backend</h3>
-            <ul class="chips">
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>Python</li>
-              <li>PostgreSQL</li>
-              <li>MongoDB</li>
-              <li>REST APIs</li>
-            </ul>
+          <article class="focus-card reveal" data-delay="1">
+            <h3>Application Security</h3>
+            <p>Assessing and improving application security through SAST, DAST, SCA, and secure development practices.</p>
           </article>
-          <article class="skill-group reveal" data-delay="2">
-            <h3>Tools &amp; Practices</h3>
-            <ul class="chips">
-              <li>Git &amp; GitHub</li>
-              <li>Docker</li>
-              <li>CI/CD</li>
-              <li>Figma</li>
-              <li>Jest</li>
-              <li>Agile</li>
-            </ul>
+          <article class="focus-card reveal" data-delay="2">
+            <h3>DevSecOps</h3>
+            <p>Integrating security controls and automated scanning into GitHub and CI/CD pipelines.</p>
+          </article>
+          <article class="focus-card reveal" data-delay="3">
+            <h3>Security Engineering</h3>
+            <p>Vulnerability management, infrastructure and container security, and security validation.</p>
           </article>
         </div>
       </div>
     </section>
 
-    <section id="projects" class="section">
+    <section id="experience" class="section section-alt">
       <div class="container">
         <header class="section-head reveal">
-          <p class="section-kicker">Projects</p>
-          <h2>Things I've built</h2>
+          <p class="section-kicker">02 · Experience</p>
+          <h2>Professional background</h2>
+        </header>
+        <div class="timeline">
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <p class="timeline-date">May 2023 – Present</p>
+            <h3>Senior Engineer – Cloud and AppSec</h3>
+            <p class="timeline-org">Innov8 Pvt Ltd · Sri Lanka</p>
+            <ul class="timeline-points">
+              <li>Implement and manage DevSecOps and cloud security solutions across enterprise environments.</li>
+              <li>Perform application security assessments using SAST and DAST methodologies.</li>
+              <li>Implement and administer security platforms including Veracode, Prisma Cloud, and Zimperium.</li>
+              <li>Secure cloud environments and workloads across Microsoft Azure and AWS.</li>
+              <li>Integrate security controls and scanning tools into GitHub and CI/CD workflows.</li>
+              <li>Monitor and improve cloud security posture management (CSPM) and vulnerability management processes.</li>
+              <li>Conduct security validations and provide recommendations that improve application and cloud security posture.</li>
+              <li>Collaborate with development, infrastructure, and security teams, and work with DevOps to automate security processes within development pipelines.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item reveal" data-delay="1">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <p class="timeline-date">Previous Role</p>
+            <h3>IT Risk and Security Operations</h3>
+            <p class="timeline-org">Allianz Insurance Lanka Limited</p>
+            <p class="timeline-note">
+              Experience gained in IT Risk and Security Operations within a regulated
+              insurance environment.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">03 · Skills</p>
+          <h2>Technical areas</h2>
+        </header>
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <h3>Application Security</h3>
+            <ul class="chips">
+              <li>SAST</li>
+              <li>DAST</li>
+              <li>SCA</li>
+              <li>RASP</li>
+              <li>Mobile Application Security</li>
+              <li>Application Security Testing</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal" data-delay="1">
+            <h3>Cloud Security</h3>
+            <ul class="chips">
+              <li>CSPM</li>
+              <li>Cloud Security</li>
+              <li>Cloud Workload Security</li>
+              <li>Microsoft Azure</li>
+              <li>AWS</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal" data-delay="2">
+            <h3>DevSecOps</h3>
+            <ul class="chips">
+              <li>CI/CD Security</li>
+              <li>GitHub Integration</li>
+              <li>Security Automation</li>
+              <li>Secure Software Delivery</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal" data-delay="3">
+            <h3>Security Engineering</h3>
+            <ul class="chips">
+              <li>Vulnerability Management</li>
+              <li>Security Testing</li>
+              <li>Infrastructure Security</li>
+              <li>Container Security</li>
+              <li>IaC Security</li>
+            </ul>
+          </article>
+        </div>
+        <div class="platforms reveal">
+          <h3>Platforms with hands-on professional experience</h3>
+          <div class="platform-grid">
+            <div class="platform-card"><span class="p-name">Veracode</span><span class="p-type">Application Security</span></div>
+            <div class="platform-card"><span class="p-name">Prisma Cloud</span><span class="p-type">Cloud Security · CSPM</span></div>
+            <div class="platform-card"><span class="p-name">Wiz</span><span class="p-type">Cloud Security · CNAPP</span></div>
+            <div class="platform-card"><span class="p-name">Zimperium</span><span class="p-type">Mobile Threat Defense</span></div>
+            <div class="platform-card"><span class="p-name">Tenable</span><span class="p-type">Vulnerability Management</span></div>
+            <div class="platform-card"><span class="p-name">Pentera</span><span class="p-type">Security Validation</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">04 · Projects</p>
+          <h2>Selected engagements</h2>
+          <p class="section-sub">
+            Generalized descriptions of professional work. Customer identities and
+            confidential implementation details are intentionally omitted.
+          </p>
         </header>
         <div class="project-grid">
 
           <article class="project-card reveal">
-            <div class="thumb" data-initial="TF"></div>
-            <div class="project-body">
-              <h3>TaskFlow</h3>
-              <p>
-                A kanban-style task manager with drag-and-drop boards, offline
-                support, and local persistence — no backend required.
-              </p>
-              <ul class="tags">
-                <li>JavaScript</li>
-                <li>CSS Grid</li>
-                <li>IndexedDB</li>
-              </ul>
-              <div class="links">
-                <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
-                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
-              </div>
-            </div>
+            <p class="project-tag">Cloud Security</p>
+            <h3>Large-Scale CSPM Implementation</h3>
+            <dl class="project-facts">
+              <div><dt>Objective</dt><dd>Improve cloud security posture and misconfiguration visibility across a large multi-cloud estate.</dd></div>
+              <div><dt>Approach</dt><dd>Onboard cloud accounts onto a CSPM platform, define posture policies, and drive continuous compliance monitoring.</dd></div>
+              <div><dt>Contribution</dt><dd>Hands-on implementation and administration, working with infrastructure teams to remediate identified risks.</dd></div>
+              <div><dt>Outcome</dt><dd>Strengthened cloud security posture and established ongoing posture management for the environment.</dd></div>
+            </dl>
           </article>
 
           <article class="project-card reveal" data-delay="1">
-            <div class="thumb" data-initial="DB"></div>
-            <div class="project-body">
-              <h3>DevBlog CMS</h3>
-              <p>
-                A markdown-first blogging platform with authentication, draft
-                previews, and a custom REST API built from scratch.
-              </p>
-              <ul class="tags">
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-              </ul>
-              <div class="links">
-                <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
-                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
-              </div>
-            </div>
+            <p class="project-tag">DevSecOps</p>
+            <h3>Code Security &amp; CI/CD Security</h3>
+            <dl class="project-facts">
+              <div><dt>Objective</dt><dd>Embed security into the software development lifecycle for enterprise engineering teams.</dd></div>
+              <div><dt>Approach</dt><dd>Integrate code security scanning into GitHub-based CI/CD workflows, with automated analysis and policy checks.</dd></div>
+              <div><dt>Contribution</dt><dd>Implemented the integrations, triaged findings, and guided development teams on remediation.</dd></div>
+              <div><dt>Outcome</dt><dd>Security scanning became part of the normal delivery pipeline for enterprise development teams.</dd></div>
+            </dl>
           </article>
 
           <article class="project-card reveal" data-delay="2">
-            <div class="thumb" data-initial="WN"></div>
-            <div class="project-body">
-              <h3>Weather Now</h3>
-              <p>
-                A forecast dashboard that uses geolocation and live weather
-                data to render hourly and weekly views with animated charts.
-              </p>
-              <ul class="tags">
-                <li>JavaScript</li>
-                <li>REST API</li>
-                <li>Chart.js</li>
-              </ul>
-              <div class="links">
-                <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
-                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
-              </div>
-            </div>
+            <p class="project-tag">Application Security</p>
+            <h3>Enterprise RASP Implementation</h3>
+            <dl class="project-facts">
+              <div><dt>Objective</dt><dd>Add runtime application self-protection for production applications at a financial-sector organization.</dd></div>
+              <div><dt>Approach</dt><dd>Deploy and tune RASP instrumentation alongside the organization's application and security teams.</dd></div>
+              <div><dt>Contribution</dt><dd>Supported implementation, configuration, and validation of the runtime protection capability.</dd></div>
+              <div><dt>Outcome</dt><dd>Runtime protection delivered for enterprise applications in the financial sector.</dd></div>
+            </dl>
           </article>
 
           <article class="project-card reveal" data-delay="3">
-            <div class="thumb" data-initial="SL"></div>
-            <div class="project-body">
-              <h3>ShopLite</h3>
-              <p>
-                A lightweight storefront demo with cart management, filtering,
-                and a complete mock checkout flow.
-              </p>
-              <ul class="tags">
-                <li>React</li>
-                <li>Context API</li>
-                <li>Stripe</li>
-              </ul>
-              <div class="links">
-                <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
-                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
-              </div>
-            </div>
+            <p class="project-tag">AppSec Evaluation</p>
+            <h3>Application Security POCs</h3>
+            <dl class="project-facts">
+              <div><dt>Objective</dt><dd>Evaluate application security solutions against real requirements for BFSI organizations.</dd></div>
+              <div><dt>Approach</dt><dd>Scoped and executed proof-of-concept engagements with defined technical success criteria.</dd></div>
+              <div><dt>Contribution</dt><dd>Led technical evaluations and demonstrated capabilities to security stakeholders.</dd></div>
+              <div><dt>Outcome</dt><dd>Successful POCs across multiple BFSI organizations supporting informed security investment decisions.</dd></div>
+            </dl>
           </article>
 
+        </div>
+      </div>
+    </section>
+
+    <section id="labs" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">05 · Labs</p>
+          <h2>Labs &amp; experiments</h2>
+        </header>
+        <p class="labs-disclaimer reveal">
+          <strong>Personal lab:</strong> independent experiments and learning projects.
+          These are not professional engagements or production systems.
+        </p>
+        <div class="labs-grid">
+
+          <article class="lab-card reveal">
+            <p class="lab-badge">Experiment</p>
+            <h3>AI-Assisted Tooling with OpenCode</h3>
+            <p>Exploring AI coding agents and how they fit into developer and security workflows.</p>
+          </article>
+
+          <article class="lab-card reveal" data-delay="1">
+            <p class="lab-badge">Learning Project</p>
+            <h3>Local LLMs with Ollama</h3>
+            <p>Running local language models and prototyping ideas for security automation use cases.</p>
+          </article>
+
+          <article class="lab-card reveal" data-delay="2">
+            <p class="lab-badge">Personal Lab</p>
+            <h3>Python Security Automation</h3>
+            <p>Writing small scripts and tools to automate repetitive tasks and interact with APIs.</p>
+          </article>
+
+          <article class="lab-card reveal" data-delay="3">
+            <p class="lab-badge">Learning Project</p>
+            <h3>Docker &amp; DevSecOps Pipelines</h3>
+            <p>Containerizing tools and assembling demo CI pipelines with security scanning steps.</p>
+          </article>
+
+          <article class="lab-card reveal" data-delay="4">
+            <p class="lab-badge">Personal Lab</p>
+            <h3>Git &amp; GitHub Workflows</h3>
+            <p>Deepening everyday practice with branching strategies, pull requests, and repository hygiene.</p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">06 · Education</p>
+          <h2>Academic background</h2>
+        </header>
+        <article class="edu-card reveal">
+          <h3>BSc (Hons) Computer Networks and Security</h3>
+          <p class="edu-org">Wrexham Glyndŵr University</p>
+          <p class="edu-note">
+            Undergraduate degree focused on computer networks and security fundamentals.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="resume" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">07 · Resume</p>
+          <h2>Resume</h2>
+        </header>
+        <div class="resume-panel reveal">
+          <div>
+            <h3>Print-ready professional resume</h3>
+            <p>
+              A structured, recruiter-friendly summary of my experience, technical
+              areas, and education. Open it and choose “Save as PDF” in your
+              browser's print dialog to download a copy.
+            </p>
+          </div>
+          <div class="resume-actions">
+            <a class="btn btn-primary" href="resume.html">Open Resume Page</a>
+            <a class="btn btn-ghost" href="resume.html#print">Print / Save as PDF</a>
+          </div>
         </div>
       </div>
     </section>
@@ -225,38 +398,39 @@
     <section id="contact" class="section section-alt">
       <div class="container">
         <header class="section-head reveal">
-          <p class="section-kicker">Contact</p>
-          <h2>Let's work together</h2>
+          <p class="section-kicker">08 · Contact</p>
+          <h2>Get in touch</h2>
+          <p class="section-sub">
+            The most reliable way to reach me is by email or LinkedIn. I am happy to
+            talk about cloud security, application security, and DevSecOps work.
+          </p>
         </header>
         <div class="contact-grid">
-          <div class="contact-info reveal">
-            <p>
-              Have a project in mind, a question, or just want to say hi?
-              My inbox is always open — I'll get back to you as soon as I can.
-            </p>
-            <a class="mail-link" href="mailto:hello@alexdoe.dev">hello@alexdoe.dev</a>
-            <div class="socials">
-              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
-              <a href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
-              <a href="#" target="_blank" rel="noopener">X / Twitter ↗</a>
-            </div>
+
+          <a class="contact-card reveal" href="mailto:induwaran@icloud.com">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+            <span class="c-label">Email</span>
+            <span class="c-value">induwaran@icloud.com</span>
+          </a>
+
+          <a class="contact-card reveal" data-delay="1" href="https://www.linkedin.com/in/induwara-nanayakkara-6953a422b" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            <span class="c-label">LinkedIn</span>
+            <span class="c-value">induwara-nanayakkara</span>
+          </a>
+
+          <a class="contact-card reveal" data-delay="2" href="https://github.com/induwaran" target="_blank" rel="noopener noreferrer">
+            <svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            <span class="c-label">GitHub</span>
+            <span class="c-value">github.com/induwaran</span>
+          </a>
+
+          <div class="contact-card contact-static reveal" data-delay="3">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span class="c-label">Location</span>
+            <span class="c-value">Sri Lanka</span>
           </div>
-          <form id="contact-form" class="contact-form reveal" data-delay="1" novalidate>
-            <div class="field">
-              <label for="name">Name</label>
-              <input id="name" name="name" type="text" placeholder="Your name" required />
-            </div>
-            <div class="field">
-              <label for="email">Email</label>
-              <input id="email" name="email" type="email" placeholder="you@example.com" required />
-            </div>
-            <div class="field">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
-            </div>
-            <button class="btn btn-primary" type="submit">Send Message</button>
-            <p class="form-status" role="status" aria-live="polite"></p>
-          </form>
+
         </div>
       </div>
     </section>
@@ -265,7 +439,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© <span id="year"></span> Alex Doe. Built with plain HTML, CSS &amp; JavaScript.</p>
+      <p>© <span id="year"></span> Induwara Nanayakkara · Senior Engineer – Cloud and AppSec</p>
       <a class="top" href="#home">Back to top ↑</a>
     </div>
   </footer>
