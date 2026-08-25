@@ -29,13 +29,6 @@
     document.addEventListener("click", function (event) {
       if (!header.contains(event.target)) closeMenu();
     });
-
-    navLinks.forEach(function (link) {
-      link.addEventListener("click", function () {
-        if (link.getAttribute("href").charAt(0) !== "#") return;
-        closeMenu();
-      });
-    });
   }
 
   function updateHeaderState() {
