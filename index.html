@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Alex Doe, a full-stack developer building fast, accessible web applications." />
+  <meta name="theme-color" content="#0b1220" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2338bdf8'/%3E%3Ctext x='50' y='70' font-size='58' text-anchor='middle' fill='%230b1220' font-family='Arial' font-weight='bold'%3EA%3C/text%3E%3C/svg%3E" />
+  <title>Alex Doe — Full-Stack Developer</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">alex<span>.dev</span></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="nav-menu" class="nav-menu" aria-label="Primary">
+        <ul>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">Hi, my name is</p>
+        <h1>Alex Doe<span class="dot">.</span></h1>
+        <p class="hero-title">Full-Stack Developer<span class="dot">.</span></p>
+        <p class="hero-blurb">
+          I design and build fast, accessible web applications end to end —
+          from clean, maintainable code to polished user experiences.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">View My Work</a>
+          <a class="btn btn-ghost" href="#contact">Get In Touch</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">About</p>
+          <h2>A bit about me</h2>
+        </header>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a developer who enjoys turning complex problems into simple,
+              elegant interfaces. My journey started with tweaking website
+              templates out of curiosity and grew into shipping full production
+              applications used by thousands of people.
+            </p>
+            <p>
+              These days I work across the whole stack: component-driven
+              frontends, Node.js backends, and the infrastructure that keeps
+              everything running smoothly. I care deeply about performance,
+              accessibility, and writing code that the next person can read.
+            </p>
+            <p>
+              When I'm not coding, you'll find me contributing to open source,
+              writing about web development, or exploring hiking trails far
+              away from a screen.
+            </p>
+          </div>
+          <aside class="about-card reveal" data-delay="1">
+            <h3>Quick facts</h3>
+            <ul>
+              <li><span class="k">Location</span><span class="v">Berlin, Germany</span></li>
+              <li><span class="k">Experience</span><span class="v">5+ years</span></li>
+              <li><span class="k">Focus</span><span class="v">Web apps &amp; APIs</span></li>
+              <li><span class="k">Currently</span><span class="v">Open to new work</span></li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">Skills</p>
+          <h2>Technologies I work with</h2>
+        </header>
+        <div class="skills-grid">
+          <article class="skill-group reveal">
+            <h3>Frontend</h3>
+            <ul class="chips">
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>TypeScript</li>
+              <li>React</li>
+              <li>Vite</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal" data-delay="1">
+            <h3>Backend</h3>
+            <ul class="chips">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Python</li>
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>REST APIs</li>
+            </ul>
+          </article>
+          <article class="skill-group reveal" data-delay="2">
+            <h3>Tools &amp; Practices</h3>
+            <ul class="chips">
+              <li>Git &amp; GitHub</li>
+              <li>Docker</li>
+              <li>CI/CD</li>
+              <li>Figma</li>
+              <li>Jest</li>
+              <li>Agile</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">Projects</p>
+          <h2>Things I've built</h2>
+        </header>
+        <div class="project-grid">
+
+          <article class="project-card reveal">
+            <div class="thumb" data-initial="TF"></div>
+            <div class="project-body">
+              <h3>TaskFlow</h3>
+              <p>
+                A kanban-style task manager with drag-and-drop boards, offline
+                support, and local persistence — no backend required.
+              </p>
+              <ul class="tags">
+                <li>JavaScript</li>
+                <li>CSS Grid</li>
+                <li>IndexedDB</li>
+              </ul>
+              <div class="links">
+                <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-delay="1">
+            <div class="thumb" data-initial="DB"></div>
+            <div class="project-body">
+              <h3>DevBlog CMS</h3>
+              <p>
+                A markdown-first blogging platform with authentication, draft
+                previews, and a custom REST API built from scratch.
+              </p>
+              <ul class="tags">
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+              </ul>
+              <div class="links">
+                <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-delay="2">
+            <div class="thumb" data-initial="WN"></div>
+            <div class="project-body">
+              <h3>Weather Now</h3>
+              <p>
+                A forecast dashboard that uses geolocation and live weather
+                data to render hourly and weekly views with animated charts.
+              </p>
+              <ul class="tags">
+                <li>JavaScript</li>
+                <li>REST API</li>
+                <li>Chart.js</li>
+              </ul>
+              <div class="links">
+                <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-delay="3">
+            <div class="thumb" data-initial="SL"></div>
+            <div class="project-body">
+              <h3>ShopLite</h3>
+              <p>
+                A lightweight storefront demo with cart management, filtering,
+                and a complete mock checkout flow.
+              </p>
+              <ul class="tags">
+                <li>React</li>
+                <li>Context API</li>
+                <li>Stripe</li>
+              </ul>
+              <div class="links">
+                <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+                <a href="#" target="_blank" rel="noopener">Live Demo ↗</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="section-kicker">Contact</p>
+          <h2>Let's work together</h2>
+        </header>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>
+              Have a project in mind, a question, or just want to say hi?
+              My inbox is always open — I'll get back to you as soon as I can.
+            </p>
+            <a class="mail-link" href="mailto:hello@alexdoe.dev">hello@alexdoe.dev</a>
+            <div class="socials">
+              <a href="#" target="_blank" rel="noopener">GitHub ↗</a>
+              <a href="#" target="_blank" rel="noopener">LinkedIn ↗</a>
+              <a href="#" target="_blank" rel="noopener">X / Twitter ↗</a>
+            </div>
+          </div>
+          <form id="contact-form" class="contact-form reveal" data-delay="1" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send Message</button>
+            <p class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Alex Doe. Built with plain HTML, CSS &amp; JavaScript.</p>
+      <a class="top" href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+
+</body>
+</html>
