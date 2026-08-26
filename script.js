@@ -66,7 +66,7 @@
 
     revealEls.forEach(function (element) {
       var steps = parseInt(element.dataset.delay || "0", 10);
-      if (steps) element.style.transitionDelay = steps * 80 + "ms";
+      if (steps) element.style.transitionDelay = steps * 70 + "ms";
       observer.observe(element);
     });
   } else {
@@ -74,6 +74,33 @@
       element.classList.add("in-view");
     });
   }
+
+  Array.prototype.forEach.call(document.querySelectorAll(".case-toggle"), function (button) {
+    button.addEventListener("click", function () {
+      var card = button.closest(".work-card");
+      var panel = document.getElementById(button.getAttribute("aria-controls"));
+      var isOpen = card.classList.toggle("open");
+      button.setAttribute("aria-expanded", String(isOpen));
+      panel.setAttribute("aria-hidden", String(!isOpen));
+      button.childNodes[0].nodeValue = isOpen ? "Close case study" : "Case study";
+    });
+  });
+
+  Array.prototype.forEach.call(document.querySelectorAll(".arch-layer"), function (layer) {
+    var chips = layer.querySelectorAll(".arch-chips li");
+    Array.prototype.forEach.call(chips, function (chip) {
+      ["mouseenter", "focus"].forEach(function (evt) {
+        chip.addEventListener(evt, function () {
+          layer.classList.add("lit");
+        });
+      });
+      ["mouseleave", "blur"].forEach(function (evt) {
+        chip.addEventListener(evt, function () {
+          layer.classList.remove("lit");
+        });
+      });
+    });
+  });
 
   if (yearEl) {
     yearEl.textContent = String(new Date().getFullYear());
